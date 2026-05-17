@@ -12,6 +12,7 @@ connectDB()
     });
 
     app.listen(process.env.PORT || 8000, () => {
+      console.log("env variables", process.env)
       console.log("app is listening on: ", process.env.PORT);
     });
   })

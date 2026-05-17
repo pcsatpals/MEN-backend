@@ -175,7 +175,7 @@ const getAllPlaylists = asyncHandler(async (req, res) => {
     page,
     limit
   });
-
+  console.log("playlists", playLists)
   return res
     .status(200)
     .json(
